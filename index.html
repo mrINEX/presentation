@@ -188,7 +188,7 @@ ReactDOM.render(
 				<section>
 
 					<section>
-						<h3>Thinking in <h1>React</h1></h3><h4>React is, in our opinion, the premier way to build big, fast Web apps with JavaScript. It has scaled very well for us at Facebook and Instagram.</h4>
+						<h3>Thinking in <h1>React</h1></h3><h4>React is the premier way to build big, fast Web apps with JavaScript. It has scaled very well for us at Facebook and Instagram.</h4>
 						<small>One of the many great parts of React is how it makes you think about apps as you build them.</small>
 					</section>
 
@@ -226,7 +226,7 @@ ReactDOM.render(
 						<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
 							const element = &lt;h1&gt;Hello, world!&lt;/h1&gt;;
 							</code></pre>
-						<small>Consider this variable declaration. This funny tag syntax is neither a string nor HTML.
+						<small>This funny tag syntax is neither a string nor HTML.
 							It is called JSX, and it is a syntax extension to JavaScript. We recommend using it with React to describe what the UI should look like. JSX may remind you of a template language, but it comes with the full power of JavaScript.
 							JSX produces React “elements”.</small>
 						</br>
@@ -336,12 +336,12 @@ const element = {
 
 				<section>
 					<section>
-					<h2>Without JSX</h2><h4>Do I need to use JSX with React?</h4><h4>JSX is not a requirement for using React. Using React without JSX is especially convenient when you don’t want to set up compilation in your build environment.</h4>
+					<h2>Without JSX</h2><h4>Do I need to use JSX with React?</h4><h4>JSX is not a requirement for using React.</h4>
 					<small>Each JSX element is just syntactic sugar for calling <code>React.createElement(component, props, ...children)</code>. So, anything you can do with JSX can also be done with just plain JavaScript.</small>
 					</section>
 
 					<section>
-						<h4>For example, this code written with JSX:</h4>
+						<h4>this code written with JSX:</h4>
 						<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
 							class Hello extends React.Component {
 							  render() {
@@ -357,7 +357,7 @@ const element = {
 					</section>
 
 					<section>
-						<h4>can be compiled to this code that does not use JSX:</h4>
+						<h4>this code does not use JSX:</h4>
 						<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
 						class Hello extends React.Component {
 						  render() {
