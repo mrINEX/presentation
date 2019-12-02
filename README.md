@@ -39,20 +39,20 @@ React implements a heuristic O(n) algorithm based on two assumptions:
 
 React is the premier way to build big, fast Web apps with JavaScript. It has scaled very well for us at Facebook and Instagram. One of the many great parts of React is how it makes you think about apps as you build them.
 
-	An element describes what you want to see on the screen.
+#### An element describes what you want to see on the screen.
 Applications built with just React usually have a single root DOM node. If you are integrating React into an existing app, you may have as many isolated root DOM nodes as you like.
 React elements are immutable. Once you create an element, you can’t change its children or attributes. An element is like a single frame in a movie: it represents the UI at a certain point in time.
 React DOM compares the element and its children to the previous one, and only applies the DOM updates necessary to bring the DOM to the desired state.
 
-	Components let you split the UI into independent, reusable pieces, and think about each piece in isolation.
+#### Components let you split the UI into independent, reusable pieces, and think about each piece in isolation.
 All React components must act like pure functions with respect to their props. Conceptually, components are like JavaScript functions. They accept arbitrary inputs (called “props”) and return React elements describing what should appear on the screen.
 Extracting components might seem like grunt work at first, but having a palette of reusable components pays off in larger apps. A good rule of thumb is that if a part of your UI is used several times (Button, Panel, Avatar), or is complex enough on its own (App, FeedStory, Comment), it is a good candidate to be a reusable component.
 
-	In React, you can create distinct components that encapsulate behavior you need. Then, you can render only some of them, depending on the state of your application.
-Conditional rendering in React works the same way conditions work in JavaScript. Use JavaScript operators like if or the conditional operator to create elements representing the current state, and let React update the UI to match them.
+#### In React, you can create distinct components that encapsulate behavior you need. Then, you can render only some of them, depending on the state of your application.
+Conditional rendering in React works the same way conditions work in JavaScript. Use JavaScript operators like if or the conditional operator to create elements representing the current state,and let React update the UI to match them.
 In rare cases you might want a component to hide itself even though it was rendered by another component. To do this return null instead of its render output. Returning null from a component’s render method does not affect the firing of the component’s lifecycle methods.
 
-	React has a powerful composition model, and we recommend using composition instead of inheritance to reuse code between components.
+#### React has a powerful composition model, and we recommend using composition instead of inheritance to reuse code between components.
 At Facebook, we use React in thousands of components, and we haven’t found any use cases where we would recommend creating component inheritance hierarchies. Props and composition give you all the flexibility you need to customize a component’s look and behavior in an explicit and safe way. Remember that components may accept arbitrary props, including primitive values, React elements, or functions.
 
 
